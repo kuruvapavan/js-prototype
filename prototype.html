@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="one"></p>
+
+<script>
+function student(name,age,standard,rollno,marks) {
+    
+    this.firstName=name;
+    this.age=age;
+    this.class=standard;
+    this.rollno = rollno;
+    this.totalMarks=marks;
+  }
+
+  student.school = "DPS";
+  
+  const kishore= new student("arun",12,7,20,90);
+  const sai= new student("chary",13,7,21,91);
+
+
+
+document.getElementById("one").innerHTML =
+"school name is " + student.school; 
+</script>
+
+</body>
+</html>
